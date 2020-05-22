@@ -38,10 +38,5 @@ class MyTestCase(unittest.TestCase):
         with self.assertRaises(TypeError):
             result = hello(1234)
 
-    def test_hello_expect_fail(self):
-        result = hello()
-        self.assertEqual(result, "Farewell world! :(")
-
-
 if __name__ == '__main__':
     unittest.main()
